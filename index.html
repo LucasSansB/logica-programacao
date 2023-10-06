@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Lógica de Programação</title>
     <!-- <script src="./script.js"></script> -->
 </head>
 <body>
-    <h1>Lógica de Programação</h1>
-    <p>Página de lógica de programação</p>
-
-    <form action="">
-        <div class="controle-form">
-            <label for="nota1">Nota 1: </label>
-            <input type="text" id="nota1" required>
+    <div class="painel">
+        <div class="cabecalho">
+        <h1>Lógica de Programação</h1>
+        <p>Página de lógica de programação</p>
         </div>
-        <div class="controle-form">
-            <label for="nota2">Nota 2: </label>
-            <input type="text" id="nota2" required>
+        <div class="formulario">
+            <form action="">
+                <div class="controle-form">
+                    <label for="nota1">Nota 1: </label>
+                    <input type="text" id="nota1" required>
+                </div>
+                <div class="controle-form">
+                    <label for="nota2">Nota 2: </label>
+                    <input type="text" id="nota2" required>
+                </div>
+                <div class="controle-form">
+                    <label for="nota3">Nota 3: </label>
+                    <input type="text" id="nota3" required>
+                </div>
+                <div class="botao">
+                    <button type="button" onclick="mediaAluno()">Calcular média</button>
+                </div>
+            </form>
         </div>
-        <div class="controle-form">
-            <label for="nota3">Nota 3: </label>
-            <input type="text" id="nota3" required>
+        <div class="resultado">
+            <div id="resultado"></div>
         </div>
-
-        <button type="button" onclick="mediaAluno()">Calcular média</button>
-    </form>
-
-    <div id="resultado"></div>
+    </div>
+    
     <!--  O arquivo JavaScript é mais utilizado dentro e ao final do <body> -->
     <script src="./script.js"></script>
 </body>
