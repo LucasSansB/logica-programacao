@@ -18,8 +18,8 @@ p{
     opacity: 90%;
     box-shadow: 10px 10px 5px rgba(59, 0, 94, 0.698);
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     border-radius: 20px;
     position: fixed;
@@ -27,29 +27,12 @@ p{
     height: 450px;
     margin: 5% 0 0 35%;
 }
-.cabecalho{
-    /* padding: 5px 35px; */
+form{
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
-}
-.formulario{
-    display: flex;
     align-items: center;
-    justify-content: center;
-    align-content: space-between;
-    flex-direction: column;
-}
-.botao{
-    color: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 .resultado{
-    color: green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,8 +45,11 @@ p{
     margin: 8px 0;
     box-sizing: border-box;
     outline: none;
+    display: flex;
+    flex-direction: column;
 }
-/* .controle-form:focus{
-    background-color: lightblue;
-    color:black;
-} */
+.controle-form input{
+    border-radius: 5px;
+    background-color: white;
+    border: 5px solid white;
+}
